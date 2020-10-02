@@ -22,3 +22,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.main-screen {
+  padding: 0px 25px;
+}
