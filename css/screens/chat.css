@@ -73,6 +73,7 @@
   height: 45px;
   border-radius: 15px;
   margin-right: 10px;
+  object-fit: cover;
 }
 .message__author {
   font-size: 14px;
