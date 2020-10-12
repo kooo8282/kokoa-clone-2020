@@ -10,7 +10,7 @@
   top: 0;
   font-size: 32px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #no-mobiles {
     display: none;
   }

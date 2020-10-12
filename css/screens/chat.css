@@ -122,24 +122,27 @@
   justify-content: space-between;
   background-color: white;
   padding: 5px 0px;
+  box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
 .reply__column:first-child {
-  width: 70px;
+  width: 12%;
   display: flex;
   justify-content: center;
 }
 .reply__column:last-child {
-  width: 100%;
+  width: 88%;
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 30px;
   position: relative;
 }
 .reply input {
+  display: flex;
   padding: 15px;
   width: 100%;
   border-radius: 25px;
+  box-sizing: border-box;
   background-color: #f8f8f8;
   border: var(--main-border);
   transition: all 0.3s ease-in-out;
@@ -153,39 +156,32 @@
   width: 43px;
   height: 43px;
   border-radius: 50%;
-  margin-left: 10px;
+  position: absolute;
+  right: 3px;
 }
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
   background-color: tomato;
 }
-.reply__column:last-child > i,
-.reply__column:last-child button {
-  position: absolute;
-  right: 3px;
-}
 .reply__column:last-child > i {
+  position: absolute;
   right: 60px;
 }
+.reply__column:last-child,
 .reply__column:first-child,
 .reply__column:last-child > i,
 .reply button {
   transition: all 0.3s ease-in-out;
 }
-
-.reply:focus-within .reply__column:first-child,
-.reply:focus-within .reply__column:last-child > i {
-  opacity: 0;
+.reply:focus-within .reply__column:first-child {
+  visibility: hidden;
 }
-.reply__column:last-child input {
-  transition: all 0.3s ease-in-out;
-}
-.reply:focus-within input {
-  transform: translateX(-5%) translateY(-80px);
+.reply input:focus {
+  transform: translateY(-80px) rotateX(360deg);
 }
 .reply:focus-within button {
-  transform: translateX(-48%) translateY(-80px);
+  transform: translateY(-80px) rotateY(180deg);
 }
 .reply:focus-within {
   transform: translateY(80px);
