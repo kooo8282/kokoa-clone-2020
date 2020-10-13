@@ -174,9 +174,6 @@
 .reply button {
   transition: all 0.3s ease-in-out;
 }
-.reply:focus-within .reply__column:first-child {
-  visibility: hidden;
-}
 .reply input:focus {
   transform: translateY(-80px) rotateX(360deg);
 }
